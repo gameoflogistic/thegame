@@ -15,12 +15,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
-<body>
-	<script>
-		$(document).ready(function(){
-			$('#q0').fadeIn('slow');
-		});
-	</script>
+<body onload='ready'>
 	<div id='screen-container'>
 		<span class='span-title'>
 			<a href="http://gameoflogistics.github.io">
@@ -1229,5 +1224,10 @@
 			<div class="texto-footer">Jogo desenvolvido para a disciplina de Operações Logísticas da UFSCar - <i>campus</i> Sorocaba.</div>
 		</div>
 	</div>
+	<script>
+		$(document).ready(function(){
+			$('#q0').fadeIn('slow');
+		});
+	</script>
 </body>
 </html>
