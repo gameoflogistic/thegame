@@ -281,7 +281,7 @@ ul li{
 	text-align: left;
 }
 .questao{
-	display: block;
+	display: none;
 	position: relative;
 	font-size: 18px;
 	padding-top: 3%;
