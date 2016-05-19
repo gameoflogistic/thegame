@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game of Logistics</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<script src="js/ideal1.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body onload='ready'>
+	<div id='screen-container'>
+		<span class='span-title'>
+			<a href="http://gameoflogistics.github.io">
+				Game of Logistics
+			</a>
+		</span>
+		<div class="menu">
+			<li class="item-menu"><a href="http://gameoflogistics.github.io">Quiz</a></li>
+			<!-- <li class="item-menu"><a href="#">Jogo da Memória</a></li> -->
+			<li class="item-menu"><a href="../liga-liga.html">Liga-Liga</a></li>
+		</div>
+		<div id='game-container'>
+			<div class="container-container">
+				<div class="quiz-container" id='q0'>
+					<div class="instrucao">Este é um quiz sobre embalagens, parte do conteúdo de logística.
+						<br>Leia com atenção e selecione apenas uma alternativa correta para cada questão!</br>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder' onclick='iniciarJogo()'>Começar!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
