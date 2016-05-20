@@ -33,11 +33,13 @@ function reiniciarJogo(){
 };
 
 function iniciarJogo(){
-	setTimeout(function(){
 		var a = document.querySelector('#q0');
+	setTimeout(function(){
 		a.style.display = 'none';
+	}, 1000);
+	setTimeout(function(){
 		document.querySelector('#q1').style.display = 'block';
-	}, 3000);
+	}, 1300);
 };
 
 function responder1(radioGroupName) {
