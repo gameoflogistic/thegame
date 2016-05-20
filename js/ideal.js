@@ -33,9 +33,11 @@ function reiniciarJogo(){
 };
 
 function iniciarJogo(){
-	var a = document.querySelector('#q0');
-	a.style.display = 'none';
-	document.querySelector('#q1').style.display = 'block';
+	setTimeout(function(){
+		var a = document.querySelector('#q0');
+		a.style.display = 'none';
+		document.querySelector('#q1').style.display = 'block';
+	}, 3000);
 };
 
 function responder1(radioGroupName) {
