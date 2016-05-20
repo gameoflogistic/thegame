@@ -255,7 +255,7 @@ ul li{
 }
 
 .quiz-container{
-	display: block;
+	display: hidden;
 	position:relative;
 	height: 80%;
 	margin: auto auto;
