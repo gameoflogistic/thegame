@@ -39,7 +39,7 @@ function iniciarJogo(){
 	}, 1000);
 	setTimeout(function(){
 		document.querySelector('#q1').style.display = 'block';
-	}, 1300);
+	}, 1000);
 };
 
 function responder1(radioGroupName) {
