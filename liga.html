@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game of Logistics</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<script src="js/ideal1.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+</head>
+<body onload='ready'>
+	<div id='screen-container'>
+		<span class='span-title'>
+			<a href="http://gameoflogistics.github.io">
+				Game of Logistics
+			</a>
+		</span>
+		<div class="menu">
+			<li class="item-menu"><a href="http://gameoflogistics.github.io">Quiz</a></li>
+			<!-- <li class="item-menu"><a href="#">Jogo da Memória</a></li> -->
+			<li class="item-menu"><a href="liga.html">Liga-Liga</a></li>
+		</div>
+		<div class='game-container'>
+			<div class="container-container">
+				<!-- q22 -->
+				<div class="quiz-container" id='q22'>
+					<div class="instrucao">Este é um quiz sobre embalagens, parte do conteúdo de logística.
+						<br>Leia com atenção e selecione apenas uma alternativa correta para cada questão!</br>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Começar para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='iniciarJogo2()'>Começar!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q22 -->
+				<!-- q23 -->
+				<div class="quiz-container" id='q23'>
+					<div class="shadow" id="shadow-correto23">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto23">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq24()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto23">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto23">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq24()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>1</b> de <b>10</b></div>
+					<div class="questao"><b>1</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder23()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q23 -->
+				<!-- q24 -->
+				<div class="quiz-container" id='q24'>
+					<div class="shadow" id="shadow-correto24">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto24">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq25()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto24">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto24">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq25()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>2</b> de <b>10</b></div>
+					<div class="questao"><b>2</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder24()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q24 -->
+				<!-- q25 -->
+				<div class="quiz-container" id='q25'>
+					<div class="shadow" id="shadow-correto25">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto25">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq26()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto25">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto25">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq26()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>3</b> de <b>10</b></div>
+					<div class="questao"><b>3</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder25()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q25 -->
+				<!-- q26 -->
+				<div class="quiz-container" id='q26'>
+					<div class="shadow" id="shadow-correto26">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto26">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq27()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto26">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto26">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq27()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>4</b> de <b>10</b></div>
+					<div class="questao"><b>4</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder26()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q26 -->
+				<!-- q27 -->
+				<div class="quiz-container" id='q27'>
+					<div class="shadow" id="shadow-correto27">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto27">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq28()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto27">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto27">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq28()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>5</b> de <b>10</b></div>
+					<div class="questao"><b>5</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder27()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q27 -->
+				<!-- q28 -->
+				<div class="quiz-container" id='q28'>
+					<div class="shadow" id="shadow-correto28">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto28">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq29()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto28">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto28">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq29()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>6</b> de <b>10</b></div>
+					<div class="questao"><b>6</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder28()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q28 -->
+				<!-- q29 -->
+				<div class="quiz-container" id='q29'>
+					<div class="shadow" id="shadow-correto29">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto29">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq30()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto29">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto29">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq30()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>7</b> de <b>10</b></div>
+					<div class="questao"><b>7</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder29()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q29 -->
+				<!-- q30 -->
+				<div class="quiz-container" id='q30'>
+					<div class="shadow" id="shadow-correto30">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto30">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq31()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto30">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto30">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq31()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>8</b> de <b>10</b></div>
+					<div class="questao"><b>8</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder30()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q30 -->
+				<!-- q31 -->
+				<div class="quiz-container" id='q31'>
+					<div class="shadow" id="shadow-correto31">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto31">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq32()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto31">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto31">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirq32()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>9</b> de <b>10</b></div>
+					<div class="questao"><b>9</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder31()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q31 -->
+				<!-- q32 -->
+				<div class="quiz-container" id='q32'>
+					<div class="shadow" id="shadow-correto32">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto32">
+								<span>Parabéns! Afirmar conteúdo!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirResultadoFinal()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" id="shadow-incorreto32">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="incorreto32">
+								<span>Explicar possível Erro!</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='abrirResultadoFinal()'>Próxima!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
+					<div class="question-count">Questão <b>10</b> de <b>10</b></div>
+					<div class="questao"><b>10</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div id='content'>
+						<div id="cardSlots"> </div>
+						<div id="cardPile"> </div>
+						 
+						<div id="successMessage">
+						    <h2>You did it!</h2>
+						    <button onclick="init()">Play Again</button>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder32()'>Responder!</li>
+							<li id = 'desistir' onclick='desistir()'> Desistir </li>
+						</ul>
+					</div>
+				</div>
+				<!-- q32 -->
+				<!-- q33 -->
+				<div class="quiz-container1" id='q33'>
+					<div class="shadow" id="shadow-correto33">
+						<div class="shadow-container">
+							<div class="box-resultadoParcial" id="correto33">
+								<span>Tem certeza de que quer voltar para a página inicial?</span>
+								<div class='buttons'>
+									<ul>
+										<li id = 'responder1' onclick='reiniciarJogo()'>Voltar!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id = 'displayResultadoFinal'>
+						<b><br><span>Seus pontos!</span></br></b>
+						<div id = 'joazinho'>Parabéns! Você é um Joaozinho, sabe tudo sobre embalagens e Logística!
+							<div class="joao"></div>
+						</div>
+						<div id = 'juvenil'>Quase lá! Pode-se dizer que você está no caminho, juvenil!
+							<div class="juvena"></div>
+						</div>
+						<div id = 'bad'>Que bad, você precisa estudar um pouquinho mais!
+							<div class="mal"></div>
+						</div>
+					</div>
+					<div class='buttons'>
+						<p id='nivel'><span>(clique em Ok para continuar)</span></p>
+						<ul>
+							<li id = 'responder1' onclick='responder33()'>Ok!</li>
+						</ul>
+					</div>
+				</div>
+				<!-- q33 -->
+
+			</div>
+		</div>
+		<div class="footer">
+			<a href="http://ufscar.br"><div class="logo"></div></a>
+			<div class="texto-footer">Jogo desenvolvido para a disciplina de Operações Logísticas da UFSCar - <i>campus</i> Sorocaba.</div>
+		</div>
+	</div>
+</body>
+</html>

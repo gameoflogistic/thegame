@@ -33,13 +33,9 @@ function reiniciarJogo(){
 };
 
 function iniciarJogo(){
-		var a = document.querySelector('#q0');
-	setTimeout(function(){
-		a.style.display = 'none';
-	}, 1000);
-	setTimeout(function(){
-		document.querySelector('#q1').style.display = 'block';
-	}, 1000);
+	var a = document.querySelector('#q0');
+	a.style.display = 'none';
+	document.querySelector('#q1').style.display = 'block';
 };
 
 function responder1(radioGroupName) {
@@ -529,6 +525,7 @@ function responder19(radioGroupName) {
 		// Adicionar div de explicação
 	}
 };
+
 function abrirq20(){
 	document.querySelector('#q19').style.display = 'none';
 	document.querySelector('#shadow-correto19').style.display = 'none';

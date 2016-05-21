@@ -13,7 +13,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
 </head>
 <body onload='ready'>
 	<div id='screen-container'>
@@ -25,16 +26,16 @@
 		<div class="menu">
 			<li class="item-menu"><a href="http://gameoflogistics.github.io">Quiz</a></li>
 			<!-- <li class="item-menu"><a href="#">Jogo da Memória</a></li> -->
-			<li class="item-menu"><a href="../liga-liga">Liga-Liga</a></li>
+			<li class="item-menu"><a href="liga.html">Liga-Liga</a></li>
 		</div>
-		<div id='game-container'>
+		<div class='game-container'>
 			<div class="container-container">
 				<div class="quiz-container" id='q0'>
 					<div class="instrucao">Este é um quiz sobre embalagens, parte do conteúdo de logística.
 						<br>Leia com atenção e selecione apenas uma alternativa correta para cada questão!</br>
 					</div>
 					<div class='buttons'>
-						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
+						<p id='nivel'><span>(clique em Começar para continuar)</span></p>
 						<ul>
 							<li id = 'responder' onclick='iniciarJogo()'>Começar!</li>
 							<li id = 'desistir' onclick='desistir()'> Desistir </li>
@@ -1224,10 +1225,5 @@
 			<div class="texto-footer">Jogo desenvolvido para a disciplina de Operações Logísticas da UFSCar - <i>campus</i> Sorocaba.</div>
 		</div>
 	</div>
-	<script>
-		$(document).ready(function(){
-			$('div.quiz-container').fadeIn(1000).removeClass('quiz-container');;
-		});
-	</script>
 </body>
 </html>

@@ -151,11 +151,23 @@ ul li{
 	background-color: #7cffb9;
 	border: 3px solid #74ed92;
 }
+#responder1{
+	background-color: #fff;
+	border: 3px solid #ddf;
+	border-radius: 6px;
+}
 
 #responder:hover{
 	text-decoration: none;
 	background-color: #74ed92;
 	cursor: pointer;
+}
+
+#responder1:hover{
+	text-decoration: none;
+	background-color: #ddf;
+	cursor: pointer;
+	transition-duration: .3s;
 }
 
 #desistir{
@@ -229,12 +241,7 @@ ul li{
 	border-bottom: 2px solid black;
 }
 
-/* .item-menu:before{
-	content:url('../img/truck.png');
-  	display:inline-block;
-} */
-
-#game-container {
+.game-container {
 	z-index: 0;
 	margin: 0px auto;
 	height: auto;
@@ -302,6 +309,7 @@ div.quiz-container{
 #q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10,#q11,#q12,#q13,#q14,#q15,#q16,#q17,#q18,#q19,#q20, #q21{
 	display: none;
 }
+
 #joaozinho, #juvenil, #bad{
 	display:none;
 	width: 100%;
@@ -416,7 +424,131 @@ div.quiz-container{
 	font-size: 18px;
 }
 
-.hidden{
-	display: none;
+/* Main content area */
+ 
+#content {
+  margin: 80px 40px;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+ 
+/* Header/footer boxes */
+ 
+.wideBox {
+  clear: both;
+  text-align: center;
+  margin: 70px;
+  padding: 10px;
+  background: #ebedf2;
+  border: 1px solid #333;
+}
+ 
+.wideBox h1 {
+  font-weight: bold;
+  margin: 20px;
+  color: #666;
+  font-size: 1.5em;
+}
+ 
+/* Slots for final card positions */
+ 
+#cardSlots {
+  margin: 50px auto 50px auto;
+  background: #ddf;
+}
+ 
+/* The initial pile of unsorted cards */
+ 
+#cardPile {
+  margin: 0 auto;
+  background: #fff;
+}
+ 
+#cardSlots, #cardPile {
+  width: 710px;
+  height: 120px;
+  padding: 20px;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+ 
+/* Individual cards and slots */
+ 
+#cardSlots div, #cardPile div {
+  float: left;
+  width: 145px;
+  height: 78px;
+  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 0;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0 0 0 10px;
+  background: #fff;
+}
+ 
+#cardSlots div:first-child, #cardPile div:first-child {
+  margin-left: 0;
+}
+ 
+#cardSlots div.hovered {
+  background: #aaa;
+}
+ 
+#cardSlots div {
+  border-style: dashed;
+}
+ 
+#cardPile div {
+  background: #666;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 0 0 3px #000;
+}
+ 
+#cardPile div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+ 
+/* Individually coloured cards */
+ 
+#card1.correct { background: red; }
+#card2.correct { background: brown; }
+#card3.correct { background: orange; }
+#card4.correct { background: yellow; } 
+ 
+/* "You did it!" message */
+#successMessage {
+  position: absolute;
+  margin: auto auto;
+  width: 350px;
+  height: 150px;
+  z-index: 100;
+  background: #dfd;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  padding: 20px;
 }
 
+#q22{
+	display: block;
+}
+#q23, #q24, #q25, #q26, #q27, #q28, #q29, #q30, #q31, #q32, #q33{
+	display: none;
+}
