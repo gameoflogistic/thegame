@@ -486,9 +486,10 @@ div.quiz-container{
 }
 
 #cardSlots, #cardSlots1, #cardSlots2, #cardSlots3, #cardSlots4, #cardSlots5, #cardSlots6, #cardSlots7, #cardSlots8, #cardSlots9 {
-  width: 720px;
+  width: 170px;
   height: 120px;
   padding: 20px;
+  margin:auto;
 }
 #new-wrapper{
 	display: block;
