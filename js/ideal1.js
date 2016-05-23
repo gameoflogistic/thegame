@@ -38,7 +38,7 @@ function init() {
   $('#cardSlots').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta1', 'Resposta2', 'Resposta3', 'Resposta4' ];
+  var numbers = [ 'Engradado', 'Caixa M', 'Caixa K', 'Sacaria' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -51,7 +51,7 @@ function init() {
   }
 
   // Create the card slots
-  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 1 ).appendTo( '#cardSlots' ).droppable( {
+  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 2 ).appendTo( '#cardSlots' ).droppable( {
     accept: '#cardPile div',
     hoverClass: 'hovered',
     drop: handleCardDrop
@@ -80,11 +80,11 @@ function handleCardDrop( event, ui ) {
   if ( cardNumber == slotNumber ) {
 		// Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto23').style.display = 'block';}, 300);
-    document.querySelector('#correto23 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto23 span').innerHTML = 'Parabéns, criança!';
     pontos23 = 1;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto23').style.display = 'block';}, 300);
-    document.querySelector('#incorreto23 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto23 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Faça alguma coisa quando errou
 	}
 }
@@ -101,7 +101,7 @@ function abrirq24() {
   $('#cardSlots1').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta12', 'Resposta22', 'Resposta32', 'Resposta42' ];
+  var numbers = [ 'Caixa Plástica', 'Caixa P', 'Caixote', 'Caixa Polimérica' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -142,12 +142,12 @@ function handleCardDrop1( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto24').style.display = 'block';}, 300);
-    document.querySelector('#correto24 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto24 span').innerHTML = 'Parabéns!';
     pontos24 = 1;
     // corectCards++;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto24').style.display = 'block';}, 300);
-    document.querySelector('#incorreto24 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto24 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Adicionar div de explicação
     // Faça alguma coisa quando errou
   }
@@ -165,7 +165,7 @@ function abrirq25() {
   $('#cardSlots2').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta13', 'Resposta23', 'Resposta33', 'Resposta43' ];
+  var numbers = [ 'Caixote', 'Engradado', 'Caixa M', 'Caixa K' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -178,7 +178,7 @@ function abrirq25() {
   }
 
   // Create the card slots
-  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 2 ).appendTo( '#cardSlots2' ).droppable( {
+  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 4 ).appendTo( '#cardSlots2' ).droppable( {
     accept: '#cardPile2 div',
     hoverClass: 'hovered',
     drop: handleCardDrop2
@@ -206,12 +206,12 @@ function handleCardDrop2( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto25').style.display = 'block';}, 300);
-    document.querySelector('#correto25 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto25 span').innerHTML = 'Parabéns! Não se esqueça de salvar o modelo!';
     pontos25 = 1;
     // corectCards++;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto25').style.display = 'block';}, 300);
-    document.querySelector('#incorreto25 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto25 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Adicionar div de explicação
     // Faça alguma coisa quando errou
   }
@@ -229,7 +229,7 @@ function abrirq26() {
   $('#cardSlots3').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta14', 'Resposta24', 'Resposta34', 'Resposta44' ];
+  var numbers = [ 'Bombona', 'Barril', 'Tambor', 'Galão' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -242,7 +242,7 @@ function abrirq26() {
   }
 
   // Create the card slots
-  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 2 ).appendTo( '#cardSlots3' ).droppable( {
+  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 3 ).appendTo( '#cardSlots3' ).droppable( {
     accept: '#cardPile3 div',
     hoverClass: 'hovered',
     drop: handleCardDrop3
@@ -270,12 +270,12 @@ function handleCardDrop3( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto26').style.display = 'block';}, 300);
-    document.querySelector('#correto26 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto26 span').innerHTML = 'Parabéns!';
     pontos26 = 1;
     // corectCards++;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto26').style.display = 'block';}, 300);
-    document.querySelector('#incorreto26 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto26 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Adicionar div de explicação
     // Faça alguma coisa quando errou
   }
@@ -293,7 +293,7 @@ function abrirq27() {
   $('#cardSlots4').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta14', 'Resposta24', 'Resposta34', 'Resposta44' ];
+  var numbers = [ 'Primária e Secundária, respectivamente', 'Ambas são Quartenárias', 'Quartenária e Quinquenária, respectivamente', 'Ambas são Primárias' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -334,12 +334,12 @@ function handleCardDrop4( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto27').style.display = 'block';}, 300);
-    document.querySelector('#correto27 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto27 span').innerHTML = 'Parabéns! Mas continue respondendo, você é meu até o fim deste jogo!';
     pontos27 = 1;
     // corectCards++;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto27').style.display = 'block';}, 300);
-    document.querySelector('#incorreto27 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto27 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Adicionar div de explicação
     // Faça alguma coisa quando errou
   }
@@ -357,7 +357,7 @@ function abrirq28() {
   $('#cardSlots5').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta14', 'Resposta24', 'Resposta34', 'Resposta44' ];
+  var numbers = [ 'Big Bag', 'Sacaria', 'Saco', 'Bolsa para líquidos' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -370,7 +370,7 @@ function abrirq28() {
   }
 
   // Create the card slots
-  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 2 ).appendTo( '#cardSlots5' ).droppable( {
+  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 1 ).appendTo( '#cardSlots5' ).droppable( {
     accept: '#cardPile5 div',
     hoverClass: 'hovered',
     drop: handleCardDrop5
@@ -398,12 +398,12 @@ function handleCardDrop5( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto28').style.display = 'block';}, 300);
-    document.querySelector('#correto28 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto28 span').innerHTML = 'Parabéns!';
     pontos28 = 1;
     // corectCards++;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto28').style.display = 'block';}, 300);
-    document.querySelector('#incorreto28 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto28 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Adicionar div de explicação
     // Faça alguma coisa quando errou
   }
@@ -421,7 +421,7 @@ function abrirq29() {
   $('#cardSlots6').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta14', 'Resposta24', 'Resposta34', 'Resposta44' ];
+  var numbers = [ 'Galão', 'Barril', 'Tambor', 'Bombona' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -434,7 +434,7 @@ function abrirq29() {
   }
 
   // Create the card slots
-  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 2 ).appendTo( '#cardSlots6' ).droppable( {
+  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 4 ).appendTo( '#cardSlots6' ).droppable( {
     accept: '#cardPile6 div',
     hoverClass: 'hovered',
     drop: handleCardDrop6
@@ -462,12 +462,12 @@ function handleCardDrop6( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto29').style.display = 'block';}, 300);
-    document.querySelector('#correto29 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto29 span').innerHTML = 'Parabéns, você não fez mais do que sua obrigação!';
     pontos29 = 1;
     // corectCards++;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto29').style.display = 'block';}, 300);
-    document.querySelector('#incorreto29 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto29 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Adicionar div de explicação
     // Faça alguma coisa quando errou
   }
@@ -485,7 +485,7 @@ function abrirq30() {
   $('#cardSlots7').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta14', 'Resposta24', 'Resposta34', 'Resposta44' ];
+  var numbers = [ 'Caixa Cubo', 'Caixa Torino', 'Caixa Toro', 'Caixa K' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -498,7 +498,7 @@ function abrirq30() {
   }
 
   // Create the card slots
-  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 2 ).appendTo( '#cardSlots7' ).droppable( {
+  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 1 ).appendTo( '#cardSlots7' ).droppable( {
     accept: '#cardPile7 div',
     hoverClass: 'hovered',
     drop: handleCardDrop7
@@ -526,12 +526,12 @@ function handleCardDrop7( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto30').style.display = 'block';}, 300);
-    document.querySelector('#correto30 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto30 span').innerHTML = 'Parabéns, se você acertar a próxima podemos tomar uma cerveja juntos!';
     pontos30 = 1;
     // corectCards++;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto30').style.display = 'block';}, 300);
-    document.querySelector('#incorreto30 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto30 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Adicionar div de explicação
     // Faça alguma coisa quando errou
   }
@@ -549,7 +549,7 @@ function abrirq31() {
   $('#cardSlots8').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta14', 'Resposta24', 'Resposta34', 'Resposta44' ];
+  var numbers = [ 'Mini Bag', 'Embalagem Laminada', 'Sacaria', 'Saco' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -562,7 +562,7 @@ function abrirq31() {
   }
 
   // Create the card slots
-  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 2 ).appendTo( '#cardSlots8' ).droppable( {
+  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 3 ).appendTo( '#cardSlots8' ).droppable( {
     accept: '#cardPile8 div',
     hoverClass: 'hovered',
     drop: handleCardDrop8
@@ -590,12 +590,12 @@ function handleCardDrop8( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto31').style.display = 'block';}, 300);
-    document.querySelector('#correto31 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto31 span').innerHTML = 'Parabéns, essa foi a última! Vamos tomar uma cerveja?';
     pontos31 = 1;
     // corectCards++;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto31').style.display = 'block';}, 300);
-    document.querySelector('#incorreto31 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto31 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Adicionar div de explicação
     // Faça alguma coisa quando errou
   }
@@ -612,7 +612,7 @@ function abrirq32() {
   $('#cardSlots9').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = [ 'Resposta14', 'Resposta24', 'Resposta34', 'Resposta44' ];
+  var numbers = [ 'Caixote', 'Caixa Torino', 'Caixa K', 'Caixa M' ];
   // numbers.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<4; i++ ) {
@@ -653,12 +653,12 @@ function handleCardDrop9( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto32').style.display = 'block';}, 300);
-    document.querySelector('#correto32 span').innerHTML = 'Isso, o professor João é tão quadrado quanto uma caixa!';
+    document.querySelector('#correto32 span').innerHTML = 'Parabéns! Hahaha!';
     pontos32 = 1;
     // corectCards++;
   } else {
     setTimeout(function(){document.querySelector('#shadow-incorreto32').style.display = 'block';}, 300);
-    document.querySelector('#incorreto32 span').innerHTML = 'Hum, errou! Acho que você não conhece o Joãozinho direito!';
+    document.querySelector('#incorreto32 span').innerHTML = 'Hum, errou! Acho que você não conhece a matéria do Joãozinho direito!';
     // Adicionar div de explicação
     // Faça alguma coisa quando errou
   }
