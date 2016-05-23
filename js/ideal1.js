@@ -590,7 +590,7 @@ function handleCardDrop8( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto31').style.display = 'block';}, 300);
-    document.querySelector('#correto31 span').innerHTML = 'Parabéns, essa foi a última! Vamos tomar uma cerveja?';
+    document.querySelector('#correto31 span').innerHTML = 'Parabéns! Hahaha!';
     pontos31 = 1;
     // corectCards++;
   } else {
@@ -653,7 +653,7 @@ function handleCardDrop9( event, ui ) {
   if ( cardNumber == slotNumber ) {
     // Faça alguma coisa quando acertou
     setTimeout(function(){document.querySelector('#shadow-correto32').style.display = 'block';}, 300);
-    document.querySelector('#correto32 span').innerHTML = 'Parabéns! Hahaha!';
+    document.querySelector('#correto32 span').innerHTML = 'Parabéns, essa foi a última! Vamos tomar uma cerveja?';
     pontos32 = 1;
     // corectCards++;
   } else {
