@@ -306,7 +306,7 @@ function abrirq27() {
   }
 
   // Create the card slots
-  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 2 ).appendTo( '#cardSlots4' ).droppable( {
+  $('<div> Solte aqui a resposta certa! </div>').data( 'number', 3 ).appendTo( '#cardSlots4' ).droppable( {
     accept: '#cardPile4 div',
     hoverClass: 'hovered',
     drop: handleCardDrop4
