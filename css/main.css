@@ -29,7 +29,15 @@
 	font-family: 'Righteous', cursive;
 	font-size: 40px;
 }
-
+.span-subtitle{
+	display: block;
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
+}
+.span-subtitle a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
+}
 .span-title a{
 	text-decoration: none;
 	color: black;
@@ -150,11 +158,21 @@ ul li{
 #responder{
 	background-color: #7cffb9;
 	border: 3px solid #74ed92;
+	border-radius: 6px;
+}
+#responder a{
+	text-decoration: none;
+	color: black;
 }
 #responder1{
 	background-color: #fff;
 	border: 3px solid #ddf;
 	border-radius: 6px;
+	text-decoration: none;
+}
+#responder1 a{
+	text-decoration: none;
+	color: black;
 }
 
 #responder:hover{
@@ -194,6 +212,8 @@ ul li{
 	width: calc(100% - 19px);
 	height: calc(100% - 19px);
 }
+
+
 
 #parabens p{
 	font-size: 24px;
@@ -363,7 +383,7 @@ div.quiz-container{
 	display: inline-block;
 	position: relative;
 	width: 180px;
-	height: 120px;
+	height: 125px;
 	background-image: url('../img/logo-ufscar.png');
 	background-size: 90%;
 	background-repeat: no-repeat;
@@ -425,7 +445,7 @@ div.quiz-container{
 
 /* Main content area */
 
-.content {
+#content, #content1, #content2, #content3, #content4, #content5, #content6, #content7, #content8, #content9 {
   margin: 50px 40px;
   text-align: center;
   -moz-user-select: none;
@@ -453,19 +473,31 @@ div.quiz-container{
 
 /* Slots for final card positions */
 
-.cardSlots {
-  margin: 50px auto 50px auto;
-  background: #ddf;
+#cardSlots, #cardSlots1, #cardSlots2, #cardSlots3, #cardSlots4, #cardSlots5, #cardSlots6, #cardSlots7, #cardSlots8, #cardSlots9 {
+  margin: 0px auto 50px 285px;
+  /* background: #ddf; */
 }
 
 /* The initial pile of unsorted cards */
 
-.cardPile {
+#cardPile, #cardPile1, #cardPile2, #cardPile3, #cardPile4, #cardPile5, #cardPile6, #cardPile7, #cardPile8, #cardPile9 {
   margin: 0 auto;
   background: #fff;
 }
 
-.cardSlots, .cardPile {
+#cardSlots, #cardSlots1, #cardSlots2, #cardSlots3, #cardSlots4, #cardSlots5, #cardSlots6, #cardSlots7, #cardSlots8, #cardSlots9 {
+  width: 720px;
+  height: 120px;
+  padding: 20px;
+}
+#new-wrapper{
+	display: block;
+	width: 720px;
+  height: 200px;
+  padding: 20px;
+}
+
+#cardPile, #cardPile1, #cardPile2, #cardPile3, #cardPile4, #cardPile5, #cardPile6, #cardPile7, #cardPile8, #cardPile9 {
   width: 710px;
   height: 120px;
   padding: 20px;
@@ -480,7 +512,7 @@ div.quiz-container{
 
 /* Individual cards and slots */
 
-.cardSlots div, .cardPile div {
+#cardSlots div, #cardSlots1 div, #cardSlots2 div, #cardSlots3 div, #cardSlots4 div, #cardSlots5 div, #cardSlots6 div, #cardSlots7 div, #cardSlots8 div, #cardSlots9 div, #cardPile div, #cardPile1 div, #cardPile2 div, #cardPile3 div, #cardPile4 div, #cardPile5 div, #cardPile6 div, #cardPile7 div, #cardPile8 div, #cardPile9 div {
   float: left;
   width: 145px;
   height: 78px;
@@ -495,26 +527,26 @@ div.quiz-container{
   background: #fff;
 }
 
-.cardSlots div:first-child, .cardPile div:first-child {
+#cardSlots div:first-child, #cardSlots1 div:first-child, #cardSlots2 div:first-child, #cardSlots3 div:first-child, #cardSlots4 div:first-child, #cardSlots5 div:first-child, #cardSlots6 div:first-child, #cardSlots7 div:first-child, #cardSlots8 div:first-child, #cardSlots9 div:first-child, #cardPile div:first-child, #cardPile1 div:first-child, #cardPile2 div:first-child, #cardPile3 div:first-child, #cardPile4 div:first-child, #cardPile5 div:first-child, #cardPile6 div:first-child, #cardPile7 div:first-child, #cardPile8 div:first-child, #cardPile9 div:first-child {
   margin-left: 0;
 }
 
-.cardSlots div.hovered {
+#cardSlots div.hovered, #cardSlots1 div.hovered, #cardSlots2 div.hovered, #cardSlots3 div.hovered, #cardSlots4 div.hovered, #cardSlots5 div.hovered, #cardSlots6 div.hovered, #cardSlots7 div.hovered, #cardSlots8 div.hovered, #cardSlots9 div.hovered {
   background: #aaa;
 }
 
-.cardSlots div {
+#cardSlots div, #cardSlots1 div, #cardSlots2 div, #cardSlots3 div, #cardSlots4 div, #cardSlots5 div, #cardSlots6 div, #cardSlots7 div, #cardSlots8 div, #cardSlots9 div {
   border-style: dashed;
 }
 
-.cardPile div {
-  background: #666;
+#cardPile div, #cardPile1 div, #cardPile2 div, #cardPile3 div, #cardPile4 div, #cardPile5 div, #cardPile6 div, #cardPile7 div, #cardPile8 div, #cardPile9 div {
+  background: #F7AD76;
   color: #fff;
   font-size: 20px;
   text-shadow: 0 0 3px #000;
 }
 
-.cardPile div.ui-draggable-dragging {
+#cardPile div.ui-draggable-dragging, #cardPile1 div.ui-draggable-dragging, #cardPile2 div.ui-draggable-dragging, #cardPile3 div.ui-draggable-dragging, #cardPile4 div.ui-draggable-dragging, #cardPile5 div.ui-draggable-dragging, #cardPile6 div.ui-draggable-dragging, #cardPile7 div.ui-draggable-dragging, #cardPile8 div.ui-draggable-dragging, #cardPile9 div.ui-draggable-dragging {
   -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
@@ -550,4 +582,124 @@ div.quiz-container{
 }
 #q23, #q24, #q25, #q26, #q27, #q28, #q29, #q30, #q31, #q32, #q33{
 	display: none;
+}
+.emb1{
+	/* z-index: 1000; */
+	background-image: url('../img/emb1.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
+}
+.emb2{
+	/* z-index: 1000; */
+	background-image: url('../img/emb2.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
+}
+.emb3{
+	/* z-index: 1000; */
+	background-image: url('../img/emb3.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
+}
+.emb4{
+	/* z-index: 1000; */
+	background-image: url('../img/emb4.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
+}
+.emb5{
+	/* z-index: 1000; */
+	background-image: url('../img/emb5.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
+}
+.emb6{
+	/* z-index: 1000; */
+	background-image: url('../img/emb6.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
+}
+.emb7{
+	/* z-index: 1000; */
+	background-image: url('../img/emb7.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
+}
+.emb8{
+	/* z-index: 1000; */
+	background-image: url('../img/emb8.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
+}
+.emb9{
+	/* z-index: 1000; */
+	background-image: url('../img/emb9.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
+}
+.emb10{
+	/* z-index: 1000; */
+	background-image: url('../img/emb10.png');
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* background-color: white; */
+	margin: auto auto;
 }

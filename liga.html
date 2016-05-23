@@ -8,10 +8,12 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" /> 
 	<script src="js/ideal1.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
@@ -23,6 +25,11 @@
 				Game of Logistics
 			</a>
 		</span>
+		<span class='span-subtitle'>
+			<a href="http://gameoflogistics.github.io">
+				by grupo <i>Golf</i>
+			</a>
+		</span>
 		<div class="menu">
 			<li class="item-menu"><a href="http://gameoflogistics.github.io">Quiz</a></li>
 			<!-- <li class="item-menu"><a href="#">Jogo da Memória</a></li> -->
@@ -32,11 +39,11 @@
 			<div class="container-container">
 				<!-- q22 -->
 				<div class="quiz-container" id='q22'>
-					<div class="instrucao">Este é um quiz sobre embalagens, parte do conteúdo de logística.
-						<br>Leia com atenção e selecione apenas uma alternativa correta para cada questão!</br>
+					<div class="instrucao">Liga-Liga é um game também sobre embalagens, parte do conteúdo de logística, mas num formato mais dinâmico que o do Quiz.
+						<br>Leia com atenção e selecione apenas uma alternativa correta para cada questão e arraste-a para o lugar destinado!</br>
 					</div>
 					<div class='buttons'>
-						<p id='nivel'><span>(clique em Começar para continuar)</span></p>
+						<p id='nivel'><span>(clique em Começar para começar)</span></p>
 						<ul>
 							<li id = 'responder1' onclick='iniciarJogo2()'>Começar!</li>
 							<li id = 'desistir' onclick='desistir()'> Desistir </li>
@@ -73,9 +80,13 @@
 					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
 					<div class="question-count">Questão <b>1</b> de <b>10</b></div>
 					<div class="questao"><b>1</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div class='content'>
-						<div class="cardSlots"> </div>
-						<div class="cardPile"> </div>
+					<div id='content'>
+						<div class='new-wrapper'>
+							<div class='emb1'></div>
+							<div id="cardSlots"> 
+							</div>
+						</div>
+						<div id="cardPile"> </div>
 					</div>
 				</div>
 				<!-- q23 -->
@@ -108,9 +119,12 @@
 					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
 					<div class="question-count">Questão <b>2</b> de <b>10</b></div>
 					<div class="questao"><b>2</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div class='content'>
-						<div class="cardSlots"> </div>
-						<div class="cardPile"> </div>
+					<div id='content1'>
+						<div class='new-wrapper'>
+							<div class='emb2'></div>
+							<div id="cardSlots1"> </div>
+						</div>
+						<div id="cardPile1"> </div>
 					</div>
 				</div>
 				<!-- q24 -->
@@ -144,8 +158,11 @@
 					<div class="question-count">Questão <b>3</b> de <b>10</b></div>
 					<div class="questao"><b>3</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
 					<div id='content'>
-						<div id="cardSlots"> </div>
-						<div id="cardPile"> </div>
+						<div class='new-wrapper'>
+							<div class='emb3'></div>
+							<div id="cardSlots2"></div>
+						</div>
+						<div id="cardPile2"> </div>
 					</div>
 				</div>
 				<!-- q25 -->
@@ -178,9 +195,13 @@
 					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
 					<div class="question-count">Questão <b>4</b> de <b>10</b></div>
 					<div class="questao"><b>4</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div id='content'>
-						<div id="cardSlots"> </div>
-						<div id="cardPile"> </div>
+					<div id='content3'>
+						<div class='new-wrapper'>
+							<div class='emb4'></div>
+							<div id="cardSlots3"> 
+							</div>
+						</div>
+						<div id="cardPile3"> </div>
 					</div>
 				</div>
 				<!-- q26 -->
@@ -213,9 +234,13 @@
 					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
 					<div class="question-count">Questão <b>5</b> de <b>10</b></div>
 					<div class="questao"><b>5</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div id='content'>
-						<div id="cardSlots"> </div>
-						<div id="cardPile"> </div>
+					<div id='content4'>
+						<div class='new-wrapper'>
+							<div class='emb5'></div>
+							<div id="cardSlots4"> 
+							</div>
+						</div>
+						<div id="cardPile4"> </div>
 					</div>
 				</div>
 				<!-- q27 -->
@@ -248,9 +273,13 @@
 					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
 					<div class="question-count">Questão <b>6</b> de <b>10</b></div>
 					<div class="questao"><b>6</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div id='content'>
-						<div id="cardSlots"> </div>
-						<div id="cardPile"> </div>
+					<div id='content5'>
+						<div class='new-wrapper'>
+							<div class='emb6'></div>
+							<div id="cardSlots5"> 
+							</div>
+						</div>
+						<div id="cardPile5"> </div>
 					</div>
 				</div>
 				<!-- q28 -->
@@ -283,9 +312,13 @@
 					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
 					<div class="question-count">Questão <b>7</b> de <b>10</b></div>
 					<div class="questao"><b>7</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div id='content'>
-						<div id="cardSlots"> </div>
-						<div id="cardPile"> </div>
+					<div id='content6'>
+						<div class='new-wrapper'>
+							<div class='emb7'></div>
+							<div id="cardSlots6"> 
+							</div>
+						</div>
+						<div id="cardPile6"> </div>
 					</div>
 				</div>
 				<!-- q29 -->
@@ -318,9 +351,13 @@
 					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
 					<div class="question-count">Questão <b>8</b> de <b>10</b></div>
 					<div class="questao"><b>8</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div id='content'>
-						<div id="cardSlots"> </div>
-						<div id="cardPile"> </div>
+					<div id='content7'>
+						<div class='new-wrapper'>
+							<div class='emb8'></div>
+							<div id="cardSlots7"> 
+							</div>
+						</div>
+						<div id="cardPile7"> </div>
 					</div>
 				</div>
 				<!-- q30 -->
@@ -353,9 +390,13 @@
 					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
 					<div class="question-count">Questão <b>9</b> de <b>10</b></div>
 					<div class="questao"><b>9</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div id='content'>
-						<div id="cardSlots"> </div>
-						<div id="cardPile"> </div>
+					<div id='content8'>
+						<div class='new-wrapper'>
+							<div class='emb9'></div>
+							<div id="cardSlots8"> 
+							</div>
+						</div>
+						<div id="cardPile8"> </div>
 					</div>
 				</div>
 				<!-- q31 -->
@@ -388,9 +429,13 @@
 					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
 					<div class="question-count">Questão <b>10</b> de <b>10</b></div>
 					<div class="questao"><b>10</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div id='content'>
-						<div id="cardSlots"> </div>
-						<div id="cardPile"> </div>
+					<div id='content9'>
+						<div class='new-wrapper'>
+							<div class='emb10'></div>
+							<div id="cardSlots9"> 
+							</div>
+						</div>
+						<div id="cardPile9"> </div>
 					</div>
 				</div>
 				<!-- q32 -->
@@ -402,7 +447,7 @@
 								<span>Tem certeza de que quer voltar para a página inicial?</span>
 								<div class='buttons'>
 									<ul>
-										<li id = 'responder1' onclick='reiniciarJogo()'>Voltar!</li>
+										<li id = 'responder1'><a heref='liga.html'>Voltar!</a></li>
 									</ul>
 								</div>
 							</div>
@@ -433,7 +478,7 @@
 		</div>
 		<div class="footer">
 			<a href="http://ufscar.br"><div class="logo"></div></a>
-			<div class="texto-footer">Jogo desenvolvido para a disciplina de Operações Logísticas da UFSCar - <i>campus</i> Sorocaba.</div>
+			<div class="texto-footer">Jogo desenvolvido pelo grupo Golf para a disciplina de Operações Logísticas da UFSCar - <i>campus</i> Sorocaba.</div>
 		</div>
 	</div>
 </body>

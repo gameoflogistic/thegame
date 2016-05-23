@@ -8,10 +8,12 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 	<script src="js/ideal.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
@@ -23,6 +25,11 @@
 				Game of Logistics
 			</a>
 		</span>
+		<span class='span-subtitle'>
+			<a href="http://gameoflogistics.github.io">
+				by grupo <i>Golf</i>
+			</a>
+		</span>
 		<div class="menu">
 			<li class="item-menu"><a href="http://gameoflogistics.github.io">Quiz</a></li>
 			<!-- <li class="item-menu"><a href="#">Jogo da Memória</a></li> -->
@@ -32,7 +39,7 @@
 			<div class="container-container">
 				<div class="quiz-container" id='q0'>
 					<div class="instrucao">Este é um quiz sobre embalagens, parte do conteúdo de logística.
-						<br>Leia com atenção e selecione apenas uma alternativa correta para cada questão!</br>
+						<br>Leia com atenção e selecione apenas uma alternativa para cada questão!</br>
 					</div>
 					<div class='buttons'>
 						<p id='nivel'><span>(clique em Começar para continuar)</span></p>
@@ -67,27 +74,27 @@
 							</div>
 						</div>
 					</div>
-					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa correta para cada questão!</div>
-					<div class="question-count">Questão <b>1</b> de <b>20</b></div>
-					<div class="questao"><b>1</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="instrucao">Leia com atenção e selecione apenas uma alternativa para cada questão!</div>
+					<div class="question-count">Questão <b>1</b> de <b>16</b></div>
+					<div class="questao"><b>1</b>. Em relação às caixas de madeiras utilizadas para produtos agrícolas:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q1' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q1' id="a1" value='0'><a> São de fácil higienização e por isso são reutilizáveis.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q1' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q1' id="a2" value='1'><a> São reutilizáveis, mas podem transmitir fungos e bactérias que causam doenças e perdas nas colheitas.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q1' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q1' id="a3" value='0'><a> São de fácil higienização, apesar de possuírem superfícies ásperas.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q1' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q1' id="a4" value='0'><a> Apesar de suas superfícies ásperas, as caixas de madeiras acabam compensando devido a sua vida útil, que são mais longas se comparadas com as caixas de plástico.</a></input>
 						</label>
 					</div>
 					<div class='buttons'>
@@ -125,26 +132,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>2</b> de <b>20</b></div>
-					<div class="questao"><b>2</b>. O que você poderia afirmar sobre a aula do professor João?</div>
+					<div class="question-count">Questão <b>2</b> de <b>16</b></div>
+					<div class="questao"><b>2</b>. Ainda sobre as caixas de madeira, é incorreto afirmar que:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q2' id="a1" value='0'><a> Que dá sono!</a></input>
+							<input type='radio' name='q2' id="a5" value='0'><a> Muitas caixas acabam sendo reutilizadas sem suas devidas higienizações, devido à dificuldade nesse processo e também pela baixa fiscalização.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q2' id="a2" value='0'><a> Que é chata porque ele sua ppt/pdf tradicional</a></input>
+							<input type='radio' name='q2' id="a6" value='0'><a> A caixa acaba aumentando o grau de burocracia do transporte dos produtos, devido à necessidade de licenças específicas em relação à madeira utilizada.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q2' id="a3" value='0'><a> Que, apesar de tudo, é boa</a></input>
+							<input type='radio' name='q2' id="a7" value='0'><a> Por lei, é proibido o acondicionamento de diferentes produtos hortigranjeiros em uma mesma caixa de madeira.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q2' id="a4" value='1'><a> Todas as anteriores estão certas</a></input>
+							<input type='radio' name='q2' id="a8" value='1'><a> Sua vida útil é mais longa que às das caixas de plásticos.</a></input>
 						</label>
 					</div>					
 					<div class='buttons'>
@@ -182,26 +189,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>3</b> de <b>20</b></div>
-					<div class="questao"><b>3</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>3</b> de <b>16</b></div>
+					<div class="questao"><b>3</b>.  A caixa K, embalagem de madeira utilizada para produtos hortigranjeiros, era usada para acondicionar latas de querosene (em inglês, Kerosene) e por isso possui esse nome. Em relação a ela, qual a alternativa correta?</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q3' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q3' id="a9" value='0'><a> Ela é reutilizada em média 30 vezes, sendo a caixa mais utilizada para esse tipo de produto.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q3' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q3' id="a10" value='0'><a> Caixas K reutilizadas acabam reduzindo o custo do produto que embala, estimulando o comércio de novas caixas desse tipo.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q3' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q3' id="a11" value='1'><a> A caixa K é regulamentada para abobrinha, alcachofra e diversos outros produtos e era a caixa mais utilizada para esse tipo de produtos antigamente.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q3' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q3' id="a12" value='0'><a> É mais utilizada que a caixa M.</a></input>
 						</label>
 					</div>					
 					<div class='buttons'>
@@ -239,26 +246,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>4</b> de <b>20</b></div>
-					<div class="questao"><b>4</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>4</b> de <b>16</b></div>
+					<div class="questao"><b>4</b>. A caixa K é feita de:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q4' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q4' id="a13" value='1'><a> Madeira mista ou madeira de mato (70%) e pinho (30%).</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q4' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q4' id="a14" value='0'><a> Pau-brasil (30%) e pinho (70%).</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q4' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q4' id="a15" value='0'><a> Pinho (70%) e madeira mista ou madeira de mato (70%).</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q4' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q4' id="a16" value='0'><a> Pau-brasil (70%) e madeira mista ou madeira de mato (30%).</a></input>
 						</label>
 					</div>					
 					<div class='buttons'>
@@ -296,26 +303,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>5</b> de <b>20</b></div>
-					<div class="questao"><b>5</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>5</b> de <b>16</b></div>
+					<div class="questao"><b>5</b>. Em relação às caixas de madeira:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q5' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q5' id="a17" value='0'><a> Possuem medidas padrões e são paletizáveis.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q5' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q5' id="a18" value='1'><a> Existe um tipo de caixa de madeira chamada Caixa Torito.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q5' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q5' id="a19" value='1'><a> Está cada vez mais substituindo as caixas de papelão.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q5' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q5' id="a20" value='0'><a> Possui alta fiscalização e por isso acaba inibindo problemas sanitários causados por caixas de madeira.</a></input>
 						</label>
 					</div>					
 					<div class='buttons'>
@@ -353,26 +360,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>6</b> de <b>20</b></div>
-					<div class="questao"><b>6</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>6</b> de <b>16</b></div>
+					<div class="questao"><b>6</b>. Sobre a caixa M:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q6' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q6' id="a21" value='1'><a> Ela necessita de reparos constantes e pode ser utilizada por um ano, em média.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q6' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q6' id="a22" value='0'><a> Ela é menos resistente que a caixa K, sendo utilizada para o acondicionamento de produtos mais leves como o limão, por exemplo.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q6' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q6' id="a23" value='0'><a> É um tipo de caixa de madeira que possibilita uma melhor higienização se comparada com outras de seu mesmo tipo, não correndo o risco de contrações de doenças, por exemplo.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q6' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q6' id="a24" value='0'><a> Atualmente, é pouco utilizada, se comparada com a caixa K.</a></input>
 						</label>
 					</div>					
 					<div class='buttons'>
@@ -410,26 +417,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>7</b> de <b>20</b></div>
-					<div class="questao"><b>7</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>7</b> de <b>16</b></div>
+					<div class="questao"><b>7</b>. Sobre o engradado, escolha a alternativa correta:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q7' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q7' id="a25" value='0'><a> Ele não é reutilizável, diferente das caixas K e M.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q7' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q7' id="a26" value='0'><a> Protegem os produtos contra o vento e o sol.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q7' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q7' id="a27" value='1'><a> Apresenta frestas largas e acabam ferindo os produtos.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q7' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q7' id="a28" value='0'><a> Impedem a desidratação da carga devido ao seu material.</a></input>
 						</label>
 					</div>				
 					<div class='buttons'>
@@ -467,26 +474,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>8</b> de <b>20</b></div>
-					<div class="questao"><b>8</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>8</b> de <b>16</b></div>
+					<div class="questao"><b>8</b>. Dentre as afirmações abaixo, escolha a incorreta:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q8' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q8' id="a29" value='0'><a> A função primária da embalagem é proteger os alimentos, reduzindo os danos físicos.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q8' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q8' id="a30" value='0'><a> A embalagem atua como facilitadora da logística de produtos hortícolas, possibilitando a otimização das cargas e facilidade no carregamento e descarregamento.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q8' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q8' id="a31" value='0'><a> Em muitos casos, a embalagem contribui para tornar o produto mais atrativo ao consumidor, sendo decisiva no momento da venda.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q8' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q8' id="a32" value='1'><a> A embalagem não pode ser considerada uma forma de se reduzir perdas no setor hortifrutícola.</a></input>
 						</label>
 					</div>					
 					<div class='buttons'>
@@ -524,26 +531,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>9</b> de <b>20</b></div>
-					<div class="questao"><b>9</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>9</b> de <b>16</b></div>
+					<div class="questao"><b>9</b>. No que diz respeito ao uso de embalagens, pode-se afirmar que:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q9' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q9' id="a33" value='0'><a> A grande desvantagem da caixa de madeira para os produtores de frutas e hortaliças é a possibilidade de não ser retornável.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q9' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q9' id="a34" value='1'><a> A embalagem mais produzida no país, em volume, é a de papel/papelão.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q9' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q9' id="a35" value='0'><a> Quando se trata de higienização, a caixa de madeira mantém vantagem em relação a caixa plástica.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q9' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q9' id="a36" value='0'><a> A caixa de madeira vem ganhando espaço no setor hortifrutícola</a></input>
 						</label>
 					</div>					
 					<div class='buttons'>
@@ -581,26 +588,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>10</b> de <b>20</b></div>
-					<div class="questao"><b>10</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>10</b> de <b>16</b></div>
+					<div class="questao"><b>10</b>. Tendo em vista os rótulos presentes nas embalagens alimentícias, não é possível afirmar que:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q10' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q10' id="a37" value='0'><a> Com a evolução das atividades econômicas, a embalagem também passou a ter como função informar o consumidor por meio do rótulo.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q10' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q10' id="a38" value='0'><a> A Agência Nacional de Vigilância Sanitária (Anvisa) é responsável pela fiscalização e padronização dos rótulos dos alimentos no Brasil.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q10' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q10' id="a39" value='1'><a> No rótulo para frutas e hortaliças ''in natura" é obrigatório conter o código de automação e valor nutricional.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q10' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q10' id="a40" value='0'><a> A rotulagem permite maior segurança e rastreabilidade do alimento, aumentando o grau de confiança nas transações.</a></input>
 						</label>
 					</div>
 					<div class='buttons'>
@@ -638,26 +645,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>11</b> de <b>20</b></div>
-					<div class="questao"><b>11</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>11</b> de <b>16</b></div>
+					<div class="questao"><b>11</b>. A utilização de embalagens para produtos alimentícios segue uma série de normas, leis e portarias que objetivam oferecer segurança do alimento aos consumidores. Quanto a isto, pode-se afirmar que:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q11' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q11' id="a41" value='0'><a> O uso de madeira (incluindo cortiça) não é reconhecido legalmente como embalagem de produtos hortifrutícolas.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q11' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q11' id="a42" value='0'><a> Não é legislação que impeça que embalagens em contato direto com o alimento transfiram substâncias que possam contaminar o produto.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q11' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q11' id="a43" value='1'><a> A legislação proíbe a utilização de uma mesma embalagem para diferentes produtos.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q11' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q11' id="a44" value='0'><a> Embalagens reutilizáveis não precisam ser esterilizadas e higienizadas antes de serem utilizadas novamente.</a></input>
 						</label>
 					</div>
 					<div class='buttons'>
@@ -695,26 +702,27 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>12</b> de <b>20</b></div>
-					<div class="questao"><b>12</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>12</b> de <b>16</b></div>
+					<div class="questao"><b>12</b>. No que se refere a influência das embalagens na venda de produtos do setor de hortifruti, é incorreto afirmar que:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q12' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q12' id="a45" value='0'><a> Há uma opção de comercialização chamada de "Packing house" que tem como papel central captar o produto independente da embalagem, beneficiá-lo e embalá-lo de acordo com o segmento a ser atendido.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q12' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q12' id="a46" value='1'><a> Uma das vantagens refere-se a falta de padronização das embalagens para todos os segmentos de venda, o que facilita a gestão de caixas e sacarias.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q12' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q12' id="a47" value='0'><a> Cada segmento comprador (atacado, varejo e exportação) tem uma necessidade ou
+exigência específica, e cabe ao fornecedor se adequar à demanda do canal de comercialização que ele deseja atender.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q12' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q12' id="a48" value='0'><a> Há diferenças de dimensões e capacidade de peso suportada nas caixas enviadas para o mercado interno e externo, justificada pelos distintos tamanhos dos paletes principalmente no caso da exportação via aérea.</a></input>
 						</label>
 					</div>
 					<div class='buttons'>
@@ -752,26 +760,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>13</b> de <b>20</b></div>
-					<div class="questao"><b>13</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>13</b> de <b>16</b></div>
+					<div class="questao"><b>13</b>. Quando não há exigências por parte do comprador, o produtor ou o beneficiador acaba optando pela embalagem que oferece, simultaneamente, melhor proteção –levando em conta a perecibilidade e fragilidade do produto – e também melhor custo/benefício. Com base nisto, assinale a alternativa correta:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q13' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q13' id="a49" value='0'><a> Caixa de Madeira possui baixo custo, entretanto não é retornável e por ser áspera pode danificar o produto.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q13' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q13' id="a50" value='1'><a> Caixa de Papelão tem como vantagem a possibilidade de ser estampada, podendo servir como propaganda do produtor, porém é mais cara que a de madeira.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q13' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q13' id="a51" value='0'><a> Caixa de Plástico apesar de ser retornável, possui difícil higienização.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q13' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q13' id="a52" value='0'><a> Caixa de Isopor é recomendada para produtos com alta transpiração, contudo não é reciclável.</a></input>
 						</label>
 					</div>
 					<div class='buttons'>
@@ -809,26 +817,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>14</b> de <b>20</b></div>
-					<div class="questao"><b>14</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>14</b> de <b>16</b></div>
+					<div class="questao"><b>14</b>. Sobre tambores e bombonas, assinale a alternativa incorreta.</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q14' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q14' id="a53" value='0'><a> Todo material a granel deve ser fornecido em tambores de aço ou, dependendo da composição do produto, em bombonas de plástico, evitando assim a corrosão e vazamento do conteúdo da embalagem.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q14' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q14' id="a54" value='0'><a> Devem estar dispostos em pallets de madeira e preferencialmente arqueados, evitando desse modo o tombamento do produto líquido.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q14' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q14' id="a55" value='1'><a> Para produtos agroquímicos, é imprescindível que o transporte dos mesmos sejam realizados em embalagens de aço e estas estejam em conformidade com as normas vigentes que tratam da identificação, transporte e manuseio desses tipos de produtos.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q14' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q14' id="a56" value='0'><a> Apesar do tradicional formato cilíndrico, a opção por bombonas retangulares está cada vez mais se consagrando na preferência dos usuários, principalmente porque este formato visa o melhor aproveitamento das áreas para estocagem ou dos arranjos feitos para o transporte.</a></input>
 						</label>
 					</div>
 					<div class='buttons'>
@@ -866,26 +874,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>15</b> de <b>20</b></div>
-					<div class="questao"><b>15</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>15</b> de <b>16</b></div>
+					<div class="questao"><b>15</b>.  O setor de embalagens retornáveis é um dos segmentos da logística reversa que apresenta oportunidades de ganhos empresariais mesmo em uma civilização que privilegia ainda as embalagens descartáveis. Em relação a esta afirmação, assinale a incorreta:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q15' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q15' id="a57" value='0'><a> A maior razão de se devolver programas de embalagens retornáveis está no fato de reduzir determinados custos em relação ao uso de embalagens descartáveis. Num primeiro momento, embalagens retornáveis são geralmente mais caras que embalagens descartáveis, entretanto, na medida em que um número de uso acontece, esta situação se inverte.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q15' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q15' id="a58" value='1'><a> Apesar de um custo menor por viagem, as embalagens retornáveis apresentam menor capacidade de proteção do conteúdo contido nelas, de forma que as empresas precisam a priori averiguar o tradeoff eficiência x custos para a decisão do uso de embalagens recondicionadas.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q15' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q15' id="a59" value='0'><a> Diante do surgimento incessante de novas embalagens, sintéticas ou não, de fibra, de madeira compensada, de papelão, etc., o tambor metálico estaria prestes a desaparecer ou pelo menos, ter consideravelmente reduzido seu emprego. Porém, sua resistência e fácil manipulação contribuem para sua permanência.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q15' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q15' id="a60" value='0'><a> Os recipientes plásticos, introduzidos no transporte de líquidos e materiais a granel para fins industriais, estão substituindo em larga escala as embalagens convencionais de vidro, madeira e metal. A receptividade desses plásticos decorre da versatilidade do material empregado na sua fabricação: o polietileno. Ele pode adotar diversas formas, com capacidade que oscila entre cinco e 5.000 litros.</a></input>
 						</label>
 					</div>
 					<div class='buttons'>
@@ -905,7 +913,7 @@
 								<span>Parabéns! Afirmar conteúdo!</span>
 								<div class='buttons'>
 									<ul>
-										<li id = 'responder' onclick='abrirq17()'>Próxima!</li>
+										<li id = 'responder' onclick='abrirResultadoFinal()'>Próxima!</li>
 									</ul>
 								</div>
 							</div>
@@ -917,32 +925,32 @@
 								<span>Explicar possível Erro!</span>
 								<div class='buttons'>
 									<ul>
-										<li id = 'responder' onclick='abrirq17()'>Próxima!</li>
+										<li id = 'responder' onclick='abrirResultadoFinal()'>Próxima!</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="question-count">Questão <b>16</b> de <b>20</b></div>
-					<div class="questao"><b>16</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
+					<div class="question-count">Questão <b>16</b> de <b>16</b></div>
+					<div class="questao"><b>16</b>. Denominado, por muitos autores, como sendo um container flexível, big bags são embalagens feitas de material sintético (polipropileno), com fundo geralmente circular ou quadrado, semelhante a uma grande sacola.  Sobre big bags, assinale a incorreta:</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q16' id="a1" value='0'><a> Círculo</a></input>
+							<input type='radio' name='q16' id="a61" value='0'><a> Tem como maior vantagem a possibilidade de ser reaproveitado na produção após passar um processo de limpeza e sanitização.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q16' id="a2" value='0'><a> Hexágono</a></input>
+							<input type='radio' name='q16' id="a62" value='0'><a> Além da sua fabricação, que utiliza como matéria prima plástico reciclado e restos de tecido também feito com esse plástico, as big bags são mais sustentáveis por terem uma durabilidade maior, o que impacta diretamente sobre a redução de envio de resíduos à natureza.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>	
-							<input type='radio' name='q16' id="a3" value='1'><a> Quadrado</a></input>
+							<input type='radio' name='q16' id="a63" value='1'><a> Uma das desvantagens é a necessidade de grandes equipamentos para o transporte das big bags, visto que as mesmas apresentam uma capacidade de armazenar materiais da ordem de toneladas.</a></input>
 						</label>
 					</div>
 					<div class='radio'>
 						<label>
-							<input type='radio' name='q16' id="a4" value='0'><a> Triângulo</a></input>
+							<input type='radio' name='q16' id="a64" value='0'><a> Pode ser armazenado em locais abertos, visto que é confeccionado com material impermeável. Além disso, é dobrável, não ocupando excessivo espaço, por isso adequado para retornar vazio.</a></input>
 						</label>
 					</div>
 					<div class='buttons'>
@@ -954,234 +962,6 @@
 					</div>
 				</div>
 				<!-- q16 -->
-				<!-- q17 -->
-				<div class="quiz-container1" id='q17'>
-					<div class="shadow" id="shadow-correto17">
-						<div class="shadow-container">
-							<div class="box-resultadoParcial" id="correto17">
-								<span>Parabéns! Afirmar conteúdo!</span>
-								<div class='buttons'>
-									<ul>
-										<li id = 'responder' onclick='abrirq18()'>Próxima!</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="shadow" id="shadow-incorreto17">
-						<div class="shadow-container">
-							<div class="box-resultadoParcial" id="incorreto17">
-								<span>Explicar possível Erro!</span>
-								<div class='buttons'>
-									<ul>
-										<li id = 'responder' onclick='abrirq18()'>Próxima!</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="question-count">Questão <b>17</b> de <b>20</b></div>
-					<div class="questao"><b>17</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q17' id="a1" value='0'><a> Círculo</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q17' id="a2" value='0'><a> Hexágono</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>	
-							<input type='radio' name='q17' id="a3" value='1'><a> Quadrado</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q17' id="a4" value='0'><a> Triângulo</a></input>
-						</label>
-					</div>
-					<div class='buttons'>
-						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
-						<ul>
-							<li id = 'responder' onclick='responder17()'>Responder</li>
-							<li id = 'desistir' onclick='desistir()'> Desistir </li>
-						</ul>
-					</div>
-				</div>
-				<!-- q17 -->
-				<!-- q18 -->
-				<div class="quiz-container1" id='q18'>
-					<div class="shadow" id="shadow-correto18">
-						<div class="shadow-container">
-							<div class="box-resultadoParcial" id="correto18">
-								<span>Parabéns! Afirmar conteúdo!</span>
-								<div class='buttons'>
-									<ul>
-										<li id = 'responder' onclick='abrirq19()'>Próxima!</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="shadow" id="shadow-incorreto18">
-						<div class="shadow-container">
-							<div class="box-resultadoParcial" id="incorreto18">
-								<span>Explicar possível Erro!</span>
-								<div class='buttons'>
-									<ul>
-										<li id = 'responder' onclick='abrirq19()'>Próxima!</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="question-count">Questão <b>18</b> de <b>20</b></div>
-					<div class="questao"><b>18</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q18' id="a1" value='0'><a> Círculo</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q18' id="a2" value='0'><a> Hexágono</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>	
-							<input type='radio' name='q18' id="a3" value='1'><a> Quadrado</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q18' id="a4" value='0'><a> Triângulo</a></input>
-						</label>
-					</div>
-					<div class='buttons'>
-						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
-						<ul>
-							<li id = 'responder' onclick='responder18()'>Responder</li>
-							<li id = 'desistir' onclick='desistir()'> Desistir </li>
-						</ul>
-					</div>
-				</div>
-				<!-- q18 -->
-				<!-- q19 -->
-				<div class="quiz-container1" id='q19'>
-				<div class="shadow" id="shadow-correto19">
-						<div class="shadow-container">
-							<div class="box-resultadoParcial" id="correto19">
-								<span>Parabéns! Afirmar conteúdo!</span>
-								<div class='buttons'>
-									<ul>
-										<li id = 'responder' onclick='abrirq20()'>Próxima!</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="shadow" id="shadow-incorreto19">
-						<div class="shadow-container">
-							<div class="box-resultadoParcial" id="incorreto19">
-								<span>Explicar possível Erro!</span>
-								<div class='buttons'>
-									<ul>
-										<li id = 'responder' onclick='abrirq20()'>Próxima!</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="question-count">Questão <b>19</b> de <b>20</b></div>
-					<div class="questao"><b>19</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q19' id="a1" value='0'><a> Círculo</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q19' id="a2" value='0'><a> Hexágono</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>	
-							<input type='radio' name='q19' id="a3" value='1'><a> Quadrado</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q19' id="a4" value='0'><a> Triângulo</a></input>
-						</label>
-					</div>
-					<div class='buttons'>
-						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
-						<ul>
-							<li id = 'responder' onclick='responder19()'>Responder</li>
-							<li id = 'desistir' onclick='desistir()'> Desistir </li>
-						</ul>
-					</div>
-				</div>
-				<!-- q19 -->
-				<!-- q20 -->
-				<div class="quiz-container1" id='q20'>
-					<div class="shadow" id="shadow-correto20">
-						<div class="shadow-container">
-							<div class="box-resultadoParcial" id="correto20">
-								<span>Parabéns! Afirmar conteúdo!</span>
-								<div class='buttons'>
-									<ul>
-										<li id = 'responder' onclick='abrirResultadoFinal()'>Próxima!</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="shadow" id="shadow-incorreto20">
-						<div class="shadow-container">
-							<div class="box-resultadoParcial" id="incorreto20">
-								<span>Explicar possível Erro!</span>
-								<div class='buttons'>
-									<ul>
-										<li id = 'responder' onclick='abrirResultadoFinal()'>Próxima!</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="question-count">Questão <b>20</b> de <b>20</b></div>
-					<div class="questao"><b>20</b>. Qual a forma geométrica que melhor descreve o professor João?</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q20' id="a1" value='0'><a> Círculo</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q20' id="a2" value='0'><a> Hexágono</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>	
-							<input type='radio' name='q20' id="a3" value='1'><a> Quadrado</a></input>
-						</label>
-					</div>
-					<div class='radio'>
-						<label>
-							<input type='radio' name='q20' id="a4" value='0'><a> Triângulo</a></input>
-						</label>
-					</div>
-					<div class='buttons'>
-						<p id='nivel'><span>(clique em Responder para continuar)</span></p>
-						<ul>
-							<li id = 'responder' onclick='responder20()'>Responder</li>
-							<li id = 'desistir' onclick='desistir()'> Desistir </li>
-						</ul>
-					</div>
-				</div>
-				<!-- q20 -->
 
 				<!-- q21 -->
 				<div class="quiz-container1" id='q21'>
@@ -1191,7 +971,7 @@
 								<span>Tem certeza de que quer voltar para a página inicial?</span>
 								<div class='buttons'>
 									<ul>
-										<li id = 'responder' onclick='reiniciarJogo()'>Voltar!</li>
+										<li id = 'responder'><a href='http://gameoflogistics.github.io'>Voltar!</a></li>
 									</ul>
 								</div>
 							</div>
@@ -1222,7 +1002,7 @@
 		</div>
 		<div class="footer">
 			<a href="http://ufscar.br"><div class="logo"></div></a>
-			<div class="texto-footer">Jogo desenvolvido para a disciplina de Operações Logísticas da UFSCar - <i>campus</i> Sorocaba.</div>
+			<div class="texto-footer">Jogo desenvolvido pelo grupo Golf para a disciplina de Operações Logísticas da UFSCar - <i>campus</i> Sorocaba.</div>
 		</div>
 	</div>
 </body>
